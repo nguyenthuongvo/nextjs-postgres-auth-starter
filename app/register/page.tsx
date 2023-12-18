@@ -17,9 +17,9 @@ export default function Login() {
               height={20}
             />
           </Link>
-          <h3 className="text-xl font-semibold">Sign Up</h3>
+          <h3 className="text-xl font-semibold">Đăng ký</h3>
           <p className="text-sm text-gray-500">
-            Create an account with your email and password
+            Tạo tạo một tài khoản với email và mật khẩu
           </p>
         </div>
         <Form type="register" />

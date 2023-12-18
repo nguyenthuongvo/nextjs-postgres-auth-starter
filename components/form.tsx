@@ -28,7 +28,7 @@ export default function Form({ type }: { type: "login" | "register" }) {
               toast.error(error);
             } else {
               router.refresh();
-              router.push("/protected");
+              router.push("/node");
             }
           });
         } else {
@@ -68,7 +68,7 @@ export default function Form({ type }: { type: "login" | "register" }) {
           id="email"
           name="email"
           type="email"
-          placeholder="panic@thedis.co"
+          placeholder="thuongvokg@gmail.com"
           autoComplete="email"
           required
           className="mt-1 block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-black focus:outline-none focus:ring-black sm:text-sm"
@@ -105,19 +105,19 @@ export default function Form({ type }: { type: "login" | "register" }) {
       </button>
       {type === "login" ? (
         <p className="text-center text-sm text-gray-600">
-          Don&apos;t have an account?{" "}
+          Chưa có tài khoản?{" "}
           <Link href="/register" className="font-semibold text-gray-800">
-            Sign up
+            Đăng ký
           </Link>{" "}
-          for free.
+          miễn phí.
         </p>
       ) : (
         <p className="text-center text-sm text-gray-600">
-          Already have an account?{" "}
+          Bạn đã có tài khoản?{" "}
           <Link href="/login" className="font-semibold text-gray-800">
-            Sign in
+            Đăng nhập
           </Link>{" "}
-          instead.
+          ngay.
         </p>
       )}
     </form>

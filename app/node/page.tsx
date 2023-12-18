@@ -76,7 +76,7 @@ export const HolderSharing = () => (
   <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2">
     <Card className="max-w-xs mx-auto" decoration="top" decorationColor="indigo">
       <Text>Số Pi đã khai thác</Text>
-      <Metric>23 Pi</Metric>
+      <Metric>23.79 Pi</Metric>
       <Button size="xs" color="green">Nhận Pi</Button>
     </Card>
     <Card className="max-w-xs mx-auto" decoration="top" decorationColor="indigo">
