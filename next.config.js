@@ -4,6 +4,15 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tailwindui.com',
+        port: '',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

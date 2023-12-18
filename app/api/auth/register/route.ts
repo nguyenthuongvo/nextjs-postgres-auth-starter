@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     },
   });
   if (exists) {
-    return NextResponse.json({ error: "User already exists" }, { status: 400 });
+    return NextResponse.json({ error: "Tài khoản đã tồn tại" }, { status: 400 });
   } else {
     const user = await prisma.user.create({
       data: {
